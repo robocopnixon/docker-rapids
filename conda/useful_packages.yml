@@ -24,3 +24,5 @@ dependencies:
 - pip:
   - dask_labextension
   - jupyterlab-nvdashboard
+  - pybind11
+  - spdlog
