@@ -57,7 +57,7 @@ ENV CMAKE_CXX11_ABI=ON
 #ENV UCX_CUDA_IPC_CACHE=n
 
 # for building compiled image
-ADD repos /rapids
+ADD repos /rapids/repos
 ADD build.sh /rapids/build.sh
 RUN source activate ${CONDA_ENV} && bash /rapids/build.sh
 # for building at runtime from locally mounted clones
