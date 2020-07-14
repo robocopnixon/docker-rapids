@@ -1,5 +1,5 @@
 # An integration test & dev container which builds and installs RAPIDS from latest source branches
-ARG CUDA_VERSION=10.1
+ARG CUDA_VERSION=10.2
 ARG LINUX_VERSION=ubuntu18.04
 FROM nvidia/cuda:${CUDA_VERSION}-devel-${LINUX_VERSION}
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
