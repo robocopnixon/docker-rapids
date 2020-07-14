@@ -17,7 +17,7 @@ cd $REPO_DIR/rmm/python
 python setup.py install
 
 cd $REPO_DIR/cudf
-bash $REPO_DIR/cudf/build.sh libnvstrings nvstrings
+#bash $REPO_DIR/cudf/build.sh libnvstrings nvstrings
 bash $REPO_DIR/cudf/build.sh libcudf cudf
 
 cd $REPO_DIR/cudf/python/dask_cudf
