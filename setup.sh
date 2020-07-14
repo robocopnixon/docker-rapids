@@ -12,7 +12,7 @@ rm -rf ucx
 rm -rf ucx-py
 rm -rf repos
 
-BRANCH=branch-0.13
+BRANCH=branch-0.15
 UCX_BRANCH=v1.7.x
 
 mkdir -p repos
