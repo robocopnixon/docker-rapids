@@ -2,6 +2,10 @@ name: rapids_dev
 channels:
 - conda-forge
 dependencies:
+- nltk
+- pytorch
+- spacy
+- fastai
 - jupyterlab
 - bokeh
 - nodejs
