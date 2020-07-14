@@ -2,6 +2,12 @@ set -eu
 
 REPO_DIR=/rapids/repos
 
+cd $REPO_DIR/spdlog
+mkdir -p build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=${CONDA_PREFIX}
+make -j install
+
 cd $REPO_DIR/rmm
 mkdir -p build
 cd build

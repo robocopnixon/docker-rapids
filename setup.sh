@@ -10,12 +10,16 @@ rm -rf dask-*
 rm -rf xgboost
 rm -rf ucx
 rm -rf ucx-py
+rm -rf spdlog
 rm -rf repos
 
 BRANCH=branch-0.15
 UCX_BRANCH=v1.7.x
 
 mkdir -p repos
+
+git clone https://github.com/gabime/spdlog.git repos/spdlog
+
 git clone --recurse-submodules https://github.com/rapidsai/rmm -b ${BRANCH} repos/rmm
 
 git clone https://github.com/rapidsai/cudf -b $BRANCH repos/cudf
